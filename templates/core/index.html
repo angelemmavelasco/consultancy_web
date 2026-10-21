@@ -1,6 +1,64 @@
-{% extends 'core/base.html' %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>AdHoc SCS</title>
+</head>
+<body class="text-xs">
+    <header class="
+    fixed
+    flex
+    justify-between
+    items-center
+    top-0 left-0 right-0
+    w-full
+    px-4
+    z-50
+    border">
 
-{% block content %}
-    Hello world
+        <div>
+            <a href="" class=" p-1 flex flex-col gap-0.5 items-center">
+                <p class="text-2xl flex items-center">
+                    {% include 'icons/logo_icon.html' %}
+                    <span class="text-teal-600">Ad</span><span>Hoc</span>
+                </p>
+                <span class="text-gray-600 text-[9px]">Software and Consulting</span>
+            </a>
+        </div>
 
-{% endblock %}
+        <ul class="flex items-center gap-4">
+
+            <li class="hover:text-teal-900 transition-all cursor-pointer">
+                Quiénes somos
+            </li>
+
+            <li class="hover:text-teal-900 transition-all cursor-pointer">
+                Soluciones
+            </li>
+
+            <li class="hover:text-teal-900 transition-all cursor-pointer">
+                Nuestros clientes
+            </li>
+            <li class="hover:text-teal-900 transition-all cursor-pointer">
+                Metodología
+            </li>
+            <li class="hover:text-teal-900 transition-all cursor-pointer">
+                Contáctanos
+            </li>
+            <li class="hover:text-teal-900 transition-all cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-languages preview-icon"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+            </li>
+
+            <li class="bg-teal-600 text-white rounded p-1 hover:bg-teal-900 transition-all cursor-pointer">Regístrate</li>
+            <li class="bg-black text-white rounded p-1 hover:bg-teal-900 transition-all cursor-pointer">Iniciar Sesión</li>
+
+        </ul>
+    </header>
+
+
+</body>
+</html>
