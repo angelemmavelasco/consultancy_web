@@ -1,6 +1,5 @@
 # Consultancy Web | Landing Page + Backend
 
----
 ### Description
 
 Ad Hoc is a data science and software company. This landing page is the gateway to
